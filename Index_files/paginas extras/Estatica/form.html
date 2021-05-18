@@ -1,0 +1,75 @@
+<html>
+    <!--https://usuaris.tinet.cat/acl/html_web/manual/formularios/formularios_6.html -->
+
+<head>
+	<title>formularios- ejemplo 5</title>
+    <style type="text/css">
+    table{font-size:8pt;font-family:Verdana;} 
+    td{font-size:8pt;font-family:Verdana;}
+    </style>
+</head>
+
+<body background="imagen/gif/1.gif">
+<font size="1" face="verdana">
+<form action="http://www.htmlweb.net/manual/formularios/ejemplos/cgi-bin/mailto.cgi" method="post" enctype="application/x-www-form-urlencoded">
+<table width="450" cellspacing="2" cellpadding="2" border="0">
+<th colspan="2" bgcolor="Fuchsia">Por favor, rellena estos datos</th>
+<tr>
+    <td bgcolor="#ccff33" width="180"><b>Nombre:</b></td>
+    <td bgcolor="#ccffff" width="260"><input type="text" maxlength="15" size="30" name="nombre"></td>
+</tr>
+<tr>
+    <td bgcolor="#ccff33" width="180"><b>Apellidos:</b></td>
+    <td bgcolor="#ccffff""><input type="text" maxlength="25" size="30" name="apellidos"></td>
+</tr>
+<tr>
+    <td bgcolor="#ccff33" width="180"><b>Direci&oacute;n:</b></td>
+    <td bgcolor="#ccffff""><input type="text" maxlength="35" size="30" name="direccion"></td>
+</tr>
+<tr>
+    <td bgcolor="#ccff33" width="180"><b>C&oacute;digo Postal:</b></td>
+    <td bgcolor="#ccffff""><input type="text" maxlength="5" size="4" name="direccion"></td>
+</tr>
+<tr>
+    <td bgcolor="#ccff33" width="180"><b>Marca tu equipo favorito:</b></td>
+    <td bgcolor="#ccffff"">
+  <input type="Radio" name="equipo" value="madrid" checked>Real Madrid
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Radio" name="equipo" value="atletico">Atl&eacute;tico de Madrid
+</tr>
+<tr>
+    <td bgcolor="#ccff33" width="180"><b>Marca tu m&uacute;sica favorita:</b></td>
+    <td bgcolor="#ccffff"">
+    <input type="checkbox" name="musica" value="rock" checked>Rock
+  &nbsp;&nbsp;<input type="checkbox" name="musica" value="pop" checked>Pop
+  &nbsp;&nbsp;<input type="checkbox" name="musica" value="heavy">Heavy
+  &nbsp;&nbsp;<input type="checkbox" name="musica" value="tecno">Tecno
+    </td>
+</tr>
+<tr>
+    <td bgcolor="#ccff33" width="180"><b>Elige un escritor:</b></td>
+    <td bgcolor="#ccffff">
+     <select style="width:100px;">
+  <option value="Cervantes">Cervantes
+  <option value="Reverte">Reverte
+  <option value="Asimov">Asimov
+  </select>
+         </td>
+</tr>
+<tr>
+    <td bgcolor="#ccff33" width="180" valign="top"><b>?Alg&uacute;n comentario?</b></td>
+    <td bgcolor="#ccffff">
+    <textarea name="comentario" cols="20" rows="10">
+  </textarea>
+</td>
+</tr>
+<tr>
+    <td bgcolor="Fuchsia" width="180" align="right"><input type="submit" value="enviar"></b></td>
+    <td bgcolor="Fuchsia" align="left"><input type="reset" value="borrar"></td>
+</tr>
+</table>   
+</form>
+</font>
+</body>
+
+
+</html>

@@ -1,0 +1,56 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body bgcolor="black">
+<br><br><br><br><br>
+<center></center><P>
+ <P> <a href="guida_frame_1_central.html" target="centrale"> INICIO </a><P>
+  <a href="guida_frame_2_central.html" target="centrale"> VIDEO </a><P>
+  <a href="horario_1.html" target="centrale"> HORARIO </a><P>
+ <a href="sitio web.html" target="centrale"> MI PRIMER SITIO WEB </a><P>
+ <a href="calculadora.html" target="centrale"> CALCULADORA </a><P>
+<a href="formulario.html" target="centrale"> FORMULARIO </a><P>
+<a href="El_Invernadero.html" target="centrale"> INVERNADERO </a><P>
+<a href="collage.html" target="centrale"> COLLAGE </a><P>
+<a href="certificado.html" target="centrale"> MI CERTIFICADO </a><P>
+<BODY BACKGROUND="P.jpgf">
+<script> 
+function cambiarTrack(track) {
+   var path =  track.getAttribute("path")
+   viejo_audio = document.getElementById("reproductor")
+   audio_padre = viejo_audio.parentNode
+   audio_padre.removeChild(viejo_audio)
+   nuevo_audio = document.createElement("audio")
+   nuevo_audio.setAttribute("id","reproductor")
+   nuevo_audio.setAttribute("controls", "controls")
+  // nuevo_audio.setAttribute("autoplay", "autoplay")
+   source = document.createElement("source")
+   source.setAttribute("src", path)
+   source.setAttribute("type", "audio/mpeg")
+   source.setAttribute("id", "reproductorSource")
+   nuevo_audio.appendChild(source)
+   audio_padre.appendChild(nuevo_audio)}
+function cargarReproductor() {
+         var select = document.getElementById("selectTrack")
+         var path = select.options[0].getAttribute("path")
+   nuevo_audio = document.createElement("audio")
+   nuevo_audio.setAttribute("id","reproductor")
+   nuevo_audio.setAttribute("controls", "controls")       
+   source = document.createElement("source")
+   source.setAttribute("src", path)
+   source.setAttribute("type", "audio/mpeg")
+   source.setAttribute("id", "reproductorSource")
+   nuevo_audio.appendChild(source)
+   padre = document.getElementById("reproductorBox")
+   padre.appendChild(nuevo_audio)
+}
+</script>
+<div id="reproductorBox"></div>
+<select id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+<option path="../MUSICA/Adicto.mp3">Avicii - Waiting For Love</option>
+<option path="../MUSICA/Coldplay - Paradise.mp3">Coldplay - Paradise</option>
+<option path="../MUSICA/Don Diablo - On My Mind(Official Music Video).mp3">Don Diablo - On My Mind </option>
+<option path="../MUSICA/DVBBS - Never Leave(Official Music Video).mp3">Never Leave</option>
+<option path="../MUSICA/Wiz Khalifa - Celebrate[Official Video].mp3">Wiz Khalifa - Celebrate</option>
+</select>
+<script>cargarReproductor();</script>
+</body></html>
+ 
